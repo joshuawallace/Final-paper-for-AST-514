@@ -13,7 +13,6 @@ element that stars are able to produce in their cores.  To fully
 understand the chemical evolution of stars, galaxy, and the universe
 we must understand the other processes involved in nucleosynthesis.
 
-\subsection{The Physics of Nucleosynthesis}
 I first introduce some relevant physics.  Figure {\bf Figure number}
 shows what is referred to as the ``Chart of the Nuclides,'' (hereafter
 CON) which
@@ -26,14 +25,24 @@ the CON.  Most relevant to this work are the neutron
 capture and \bminus\ decay reactions.  Neutron capture on a given
 species $X$ is given by
 \begin{equation}
-^{A}_ZX + n \rightarrow ^{A+1}_ZX'
+\label{eq:nc}
+^{A}_ZX + n \rightarrow ^{A+1}_{\ \ \ Z}X'
 \end{equation}
 and is represented in the CON by a step from species $X$ to the
 species directly to the right of it.  Similarly, \bminus\ decay of a
 given species $X$ is given by
 \begin{equation}
-^{A}_ZX  \rightarrow ^{A}_{Z-1}X' + \beta^-
+\label{eq:bd}
+^{A}_ZX  \rightarrow ^{\ \ \ A}_{Z-1}X' + e^-
 \end{equation}
 and is represented in the CON by a step from species $X$ to the
 species immediately up and the left of it.  For the r- and s-processes
-which we will consider here these are the most important steps in the CON.
+these are the most important steps in the CON.
+
+The r- and s-process are both involve neutron capture.  This is
+significant because neutrons have a relatively short half-life; thus
+the presence of free neutrons, required for neutron capture, depends
+on there being a ready source of neutrons.  Additionally, the free
+neutron density is highly dependent on the details of the neutron
+source, because decaying neutrons need to be replenished to maintain a
+given density.
