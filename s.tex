@@ -27,7 +27,9 @@ are nuclides with sufficiently long half-lives that neutron capture on
 them is possible before they decay, thus producing a branch in the
 s-process trajectory.  Also, because of differences between
 environments where the s-process may occur the number of branches and
-strength of each branch may also vary from environment to environment.
+strength of each branch may also vary from environment to
+environment.  Due to the narrowness of the valley of stability
+branches typically converge after a few reactions.
 
 Since the decay rate of radioactive isotopes is higher than the
 neutron capture rate s-process trajectories through the chart of the
@@ -37,8 +39,60 @@ s-process.  If a nuclide with a given atomic number $Z_1$ and atomic
 mass $A_1$ has an isotope with atomic number $Z_1$ and atomic mass
 $A_X$ (where $A_X \geq A_1 +2$) the s-process can only produce the
 isotope with atomic mass $A_X$ if all the intervening isotopes with
-atomic mass$A_Y$, $A_1 < A_Y < A_X$ are stable as well.  If the
-nuclide with atomic mass $A_X$ cannot be reached through 
+atomic mass $A_Y$, $A_1 < A_Y < A_X$ are stable as well.  If the
+nuclide with atomic mass $A_X$ cannot be reached through neutron
+capture before the unstable isotope(s) with atomic mass $A_Y$ decay
+then the s-process will never produce it.
+
+The s-process has a termination point, at which no heavier elements
+can be made.  One such termination loop beginning with $^{209}$Bi
+(\citealt{claytonetal1961}):
+\begin{equation*}
+^{209}_{\ 83}\textrm{Bi} + n  \rightarrow ^{210}_{\ 83}\textrm{Bi} +
+\gamma 
+\end{equation*}
+\begin{equation*}
+^{210}_{\ 83}\textrm{Bi}   \rightarrow ^{210}_{\ 84}\textrm{Po} +
+e^- + \overline{\nu}_e 
+\end{equation*}
+\begin{equation*}
+^{210}_{\ 84}\textrm{Po}   \rightarrow ^{206}_{\ 82}\textrm{Pb} +
+\alpha 
+\end{equation*}
+\begin{equation*}
+^{206}_{\ 82}\textrm{Pb} + 3n  \rightarrow ^{209}_{\ 82}\textrm{Pb} +
+3\gamma 
+\end{equation*}
+\begin{equation}
+^{209}_{\ 82}\textrm{Pb}  \rightarrow ^{209}_{\ 83}\textrm{Bi} + e^-
++ \overline{\nu}_e
+\end{equation}
+
+which then loops.  \cite{claytonetal1961} say that the first step in this loop 56\% of
+the time leads to the unstable $^{210}_{\ 83}\textrm{Bi}$ that decays
+to $^{210}_{\ 84}\textrm{Po}$ while 44\% of the time is leads to a
+nearly stable ground state of $^{210}_{\ 83}\textrm{Bi}$ with a
+half-life of $2.6 \times 10^6$ years.  A neutron capture
+on $^{210}_{\ 83}\textrm{Bi}$ proceeds as follows:
+\begin{equation*}
+^{210}_{\ 83}\textrm{Bi} + n  \rightarrow ^{211}_{\ 83}\textrm{Bi} +
+\gamma
+\end{equation*}
+\begin{equation*}
+^{211}_{\ 83}\textrm{Bi}  \rightarrow ^{207}_{\ 81}\textrm{Tl} + \alpha
+\end{equation*}
+\begin{equation*}
+ ^{207}_{\ 81}\textrm{Tl}  \rightarrow  ^{207}_{\ 82}\textrm{Pb} + e^-
+ + \overline{\nu}_e
+\end{equation*}
+\begin{equation*}
+^{207}_{\ 82}\textrm{Pb} + 2n  \rightarrow ^{209}_{\ 82}\textrm{Pb} +
+2\gamma
+\end{equation*}
+\begin{equation}
+^{209}_{\ 82}\textrm{Pb}  \rightarrow ^{209}_{\ 83}\textrm{Bi} + e^- + \overline{\nu}_e
+\end{equation}
+which also loops.
 
 
 \subsection{Proposed Sites}
