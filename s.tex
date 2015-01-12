@@ -172,7 +172,7 @@ abundance will increase or decrease,
 \frac{dN_s(A,\tau)}{d\tau} < 0 ~~~\textrm{if}~~~ N_s(A,\tau)
 > \frac{\overline{\sigma}_{A-1}}{\overline{\sigma}_{A}}N_s(A-1,\tau) 
 \end{equation*}
-\begin{equation
+\begin{equation}
 \frac{dN_s(A,\tau)}{d\tau} > 0 ~~~\textrm{if}~~~ N_s(A,\tau)
 < \frac{\overline{\sigma}_{A-1}}{\overline{\sigma}_{A}}N_s(A-1,\tau).
 \end{equation}
@@ -185,9 +185,121 @@ fluence.
 \cite{iliadis2008} notes that the recursively coupled equations given
 by Equation~\ref{eq:intermsoftau} are self-regulating, meaning that
 they try to minimize the difference
-$N_s(A-1,\tau)\overline{\sigma}_{A-1} -
-N_s(A,\tau)\overline{\sigma}_{A}$.  
+\begin{equation}
+N_s(A-1,\tau)\overline{\sigma}_{A-1} -
+N_s(A,\tau)\overline{\sigma}_{A}.  
+\end{equation}
 %You can continue with this thought if you want.
 
+\cite{claytonetal1961} realized that the solar system
+abundances of s-processed nuclei could not have been formed as the
+result of a single neutron exposure; instead, a superposition of
+neutron exposures is needed to explain the observed abundances. They
+also speculated that a variety of seed nuclei could also be
+responsible for the observed abundances, but \cite{clayton1974} showed
+that the s-process chain past the last seed nuclei is independent of
+the initial distribution of the seed nuclei.  \cite{seegeretal1965}
+demonstrated that an exponential distribution of neutron exposures
+expressed as
+\begin{equation}
+\label{eq:exp}
+\rho(\tau)=\frac{f\times N(56)}{\tau_0}e^{-\tau/\tau_0}
+\end{equation}
+where $f$ is the fraction of $^{56}Fe$ seed nuclei that have been
+exposed to this exponential neutron exposure, $\rho(\tau)d\tau$ is the
+fraction of the seed nuclei that
+received a neutron exposure between $\tau$ and $\tau + d\tau$, and 
+$\tau_0$ is the mean neutron exposure.  Analyses have shown that
+observed solar system abundances are well fitted by using two
+exponential distributions for the neutron exposure: the ``main
+s-process component'' which describes the abundance distribution from
+$A=90$ to $A=205$ and the ``weak s-process component'' which describes
+the abundance distribution for $A<90$ (\citealt{iliadis2008}).  {\bf
+Good spot for the Figure showing this, iliad's 5.64}.
+Well-fitting 
+parameters for Equation~\ref{eq:exp} for each component
+are (for the main s-process component) $f\approx 0.06$\% (where
+$^{56}$Fe abundance is assume to match the solar system abundance) and
+$\tau_0\approx 0.3$ mb$^{-1}$ (for cross-sections at $kT=30$ keV);
+(for the weak s-process component) $f\approx 1.6$\% and $\tau_0\approx
+0.07$ mb$^{-1}$ (\citealt{kappeleretal1990}.  Additionally, a third component (the ``strong
+s-process component'') with large neutron exposure has been proposed
+to explain the observed
+abundances of $^{208}$Pb (\citealt{clayton1967}).  Best-fit values
+from \cite{kappeleretal1990} give $f\approx 10^{-4}$\% and $\tau_0\approx
+7$ mb$^{-1}$.  A modified main component, with a distribution that is
+larger than exponential for large $\tau$ could also be used to fit the
+$^{208}$Pb abundance.
+
+\cite{iliadis2008} calculates the average number of neutrons captured
+per nucleus for each of the three components mentioned above using his
+Equation 5.183.  The calculated averages are: 3 for the weak, 10 for
+the main, and 140 for the strong s-process components.  The disparity
+between these three components suggest that they occur in different
+astrophysical situations and provide valuable clues to figuring out
+the sites of the s-process.  Of particular note is the value for the
+strong s-process component.  At first blush it may seem strange to
+invent a component just to explain the abundance of a single nuclide
+but given the unique role $^{208}$Pb has in the termination point of
+the s-process this makes more sense.  Indeed, the value of 140
+neutrons captured on average per nucleus gives us some indication that
+the strong s-process component, if it does exist separate from the
+other two components, consists of a very high neutron exposure,
+causing a significant number of the seed nuclei exposed to this
+component to reach the s-process endpoint where, through the
+termination loop described in Equations~\ref{eq:firsttermination}
+and~\ref{eq:secondtermination}, $^{208}$Pb can pile up.
 
 \subsection{Proposed Sites}
+
+Due to 2-3 apparently separate contributions to s-process abundances
+as well as uncertainties in various details of stellar evolution and
+nuclear physics and significant branching in the s-process 
+the topic of s-process sites is not yet completely
+settled but there are some robust contenders.  {\bf All?} proposed
+sites involve post-main sequence stars.  
+
+The main s-process component is thought to happen in low mass
+(1.5-3 \Msol) asymptotic giant branch (AGB) stars
+(\citealt{schwarzschild1967}; \citealt{bussoetal1999}; \citealt{arlandinietal1999}).
+The physical scenario is thought to proceed as follows.  AGB stars
+(specifically thermally pulsing AGB stars)
+have an inert C-O core with bouts of H and He shell burning.  The
+following description follows that of \cite{kappeleretal2011}.  H
+burning in the envelop produces He, which compresses the He shell
+until the He at the bottom shell ignites in what is called a thermal
+pulse (TP).  During the TP He burns to $^{12}$C as well as convection
+is trigger in the He shell.  This influx of energy expands the star,
+which turns off H burning in the envelope.  Eventually He shell
+burning turns off and H shell burning in the envelope is reinstated,
+creating more He and starting the process again.  This TP phenomenon 
+occurs several times during the AGB life of a star.
+
+The convection established by the TP is referred to as the third
+dredge up (TDU).  Although this portion of the process is not as well
+understood theoretically it is believed that there is some mixture
+between $^{12}$C
+and H (probably into the He shell) which leads to the creation of
+$^{13}$C by fusing a proton 
+with $^{12}$C and a subsequent $\beta^+$ decay.  Then through the
+$^{13}$C$+ \alpha \rightarrow ^{16}$O$+n$ reaction neutrons are
+liberated which can then participate in the main component of the
+s-process.  This neutron exposure lasts for about 10$^4$ years and
+produces a neutron density of 10$^6$ to 10$^8$ cm$^{-3}$
+(\citealt{kappeleretal2011}).  {\bf Figure would be good here, Fig.2
+kippelahumlat whatever 1990}.
+
+The TP continues outward in the star until it almost reaches the
+H-burning shell.  For intermediate mass  AGB stars ($4<$ M/\Msol
+$< 8$) sufficiently high temperatures are reached during the TP that 
+ $^{22}$Ne is formed from $^{14}$N.  Subsequent fusion
+between $^{22}$Ne and He produces $^{25}$Mg$+n$, providing yet another
+neutron source for the s-process.  Larger AGB stars have smaller He
+shells than their low mass counterparts as well as less efficient TDU
+and so the neutrons created from this reaction are thought to have
+only a small contribution to the overall s-process abundances.
+
+
+
+It has only been recently that stellar evolution codes have been able
+to reveal all the details relevant to this, so still not well established.
