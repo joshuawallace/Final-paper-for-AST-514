@@ -64,6 +64,7 @@ e^- + \overline{\nu}_e
 3\gamma 
 \end{equation*}
 \begin{equation}
+\label{eq:firsttermination}
 ^{209}_{\ 82}\textrm{Pb}  \rightarrow ^{209}_{\ 83}\textrm{Bi} + e^-
 + \overline{\nu}_e
 \end{equation}
@@ -90,9 +91,103 @@ on $^{210}_{\ 83}\textrm{Bi}$ proceeds as follows:
 2\gamma
 \end{equation*}
 \begin{equation}
+\label{eq:secondtermination}
 ^{209}_{\ 82}\textrm{Pb}  \rightarrow ^{209}_{\ 83}\textrm{Bi} + e^- + \overline{\nu}_e
 \end{equation}
 which also loops.
+
+Because nuclei with magic numbers of neutrons have a lower neutron
+capture cross-section there is a pile up of these nuclei relative to
+their neighbors on the CON.  The s-process peaks can be seen in {\bf
+Figure s process peaks}. Because the s-process follows the valley of
+stability so closely there are only a few nuclei created by the
+s-process with a magic number of neutrons, which leads to the narrow
+peaks seen in the {\bf Figure}.  This is to be contrasted with the
+relatively broader peaks of the r-process as will be described in
+Section~\ref{sec:r}. 
+
+For the canonical s-process, which assumes that the decay time of
+unstable nuclides is much smaller than the timescale for neutron
+capture in all radioactive nuclei, there is only one stable nucleus
+for a given $A$ accessible by the s-process and thus the s-process
+path is uniquely defined by $A$.  Under these assumptions the abudance
+evolution of a stable nuclide is given by (\citealt{iliadis2008})
+\begin{multline}
+\label{eq:sreactionrate}
+\frac{dN_s(A,t)}{dt} = - N_n(t)N_s(A,t)\langle \sigma v \rangle_A \\
++N_n(t)N_s(A-1,t)\langle \sigma v \rangle_{A-1}
+\end{multline}
+where $N_s(A)$ is the number density of nucleus $A$, $N_n(t)$ is the
+number density of neutrons which (in general) can depend on time, and
+$\langle \sigma v \rangle_A$ is the
+neutron capture reaction rate per particle pair of nucleus $A$.
+Equation~\ref{eq:sreactionrate} is instructive in its simplicity; the
+abundance of any nuclide on a canonical s-process track is determined
+entirely by the number density of free neutrons, the nuclide's neutron
+capture cross-section, the neutron capture cross-section for the
+nuclide previous to it on the s-process track, and the time for which
+the s-process is active.  This also shows that, if there is only a
+limited amount of seed nuclei to start this process, the s-process
+will constantly evolve in time toward heavier nuclei with the eventual
+result being all s-processed nuclei becoming the terminating isotopes
+of Bi and Pb.  
+
+A more general trajectory which allows for the possibility of
+branching is given by
+\begin{multline}
+\frac{dN_s(Z,A)}{dt}
+\end{multline}
+.
+
+I assume that the temperature $T$ is constant over the time the
+s-process is active.  Assuming a Maxwell-Boltzmann distribution 
+for the neutron velocities, 
+$\langle \sigma v \rangle_A$ can be written as
+$ \overline{\sigma}_A v_T$, where $ \overline{\sigma}_A$ is the
+Maxwellian averaged cross-section and $v_T$ is the thermal velocity of
+the neutrons given by $v_T = \sqrt{2kT/m_N}$.  In reality the term
+$m_N$ in the previous expression should be the reduced mass but for the
+nuclei we will be looking at ($A \gtrsim 60$) approximating the
+reduced mass as $m_N$ is reasonable enough for the calculations shown
+here.  It is also useful to define the neutron exposure $\tau$ as
+\begin{equation}
+\tau = v_T \int N_n(t)dt
+\end{equation}
+which will more useful expressed in differential form
+\begin{equation}
+\label{eq:dtau}
+d\tau = v_TN_n(t)dt.
+\end{equation}
+The neutron exposure as defined here has units of neutrons per area
+and is comparable to the neutron fluence.  Substituting
+Equation~\ref{eq:dtau} into Equation~\ref{eq:sreactionrate} gives
+\begin{equation}
+\label{eq:intermsoftau}
+\frac{dN_s(A,\tau)}{d\tau} = -N_s(A,\tau)\overline{\sigma}_A +
+N_s(A-1,\tau)\overline{\sigma}_{A-1}.
+\end{equation}
+This allows us to quantitatively determine whether a nuclide's
+abundance will increase or decrease,
+\begin{equation*}
+\frac{dN_s(A,\tau)}{d\tau} < 0 ~~~\textrm{if}~~~ N_s(A,\tau)
+> \frac{\overline{\sigma}_{A-1}}{\overline{\sigma}_{A}}N_s(A-1,\tau) 
+\end{equation*}
+\begin{equation
+\frac{dN_s(A,\tau)}{d\tau} > 0 ~~~\textrm{if}~~~ N_s(A,\tau)
+< \frac{\overline{\sigma}_{A-1}}{\overline{\sigma}_{A}}N_s(A-1,\tau).
+\end{equation}
+Thus, the abundance of a nuclide $A$ in the canoncial s-process with
+constant $T$ depends only on its neutron capture cross-section, the
+neutron capture cross-section and abundance of the species before it 
+in the process, and the neutron exposure $\tau$, a measure of neutron
+fluence.
+
+\cite{iliadis2008} notes that the recursively coupled equations given
+by Equation~\ref{eq:intermsoftau} are self-regulating, meaning that
+they try to minimize the difference
+$N_s(A-1,\tau)\overline{\sigma}_{A-1} -
+N_s(A,\tau)\overline{\sigma}_{A}$.  
+%You can continue with this thought if you want.
 
 
 \subsection{Proposed Sites}
