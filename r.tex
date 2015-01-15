@@ -37,32 +37,88 @@ each of a multitude of r-process trajectories.  A
 rapid succession of neutron captures on seed nuclei causes a
 signficant neutron enrichment of the nuclei.  As this proceeds there
 are several things that can happen.  Additional neutron captures can
-further increase the $A$ of the nuclei.  Photodisintegration can
-remove neutrons from the nucleus.
+further increase the $A$ of the nuclei.  A \bminus\ decay even can
+happen. Photodisintegration can
+remove neutrons from the nucleus.  Nuclei can run up against the
+neutron drip line, where they remain until a \bminus\ decay or
+photodisintegration event move them off the drip line.  Nuclei can
+get a magic number of neutrons, where lower neutron capture
+cross-sections keep them from progressing as quickly to the next $A$.
+These highlight some of the important individual events that can
+happen in the r-process. After the neutron source is turned off the 
+neutron-rich nuclei are
+able to \bminus\ decay to the valley of stability.  
+%Because of this
+%beeline to the valley of stability after a neutron source is turned
+%off, there is only one r-process nuclide 
 
-%; the results of this
-%neutron enrichment depend on many factors such as neutron density,
-%temperature, and the decay times of the created nuclides, but
-%generally one of several things can happen while the neutron source is
-%active: 
 
-neutron captures continue faster than \bminus\ decays and the
-nuclides continue to be enriched in neutrons
+A simple r-process model for $T\geq 1$ GK and constant $N_n \geq 10^{21}$
+cm$^{-3}$ is given in \cite{iliadis2008}.  For temperatures and
+neutron densities this high, both neutron capture and
+photodisintegration occure much faster than \bminus\ decays.  In this
+case the abundance evolution of a species $^A_Z$X is given by
+\begin{multline}
+\frac{N(Z,A+1)}{N(Z,A)} = - N_nN(Z,A) \langle \sigma v \rangle_{Z,A} \\
++N(Z,A+1)\times\lambda_\gamma (Z,A+1)
+\end{multline}
+where $N(Z,A)$ is the number density of  nuclide $^A_Z$X, $\langle 
+\sigma v \rangle_{Z,A}$ is the neutron
+capture reaction rate per particle pair for the same nuclide, and
+$\lambda_\gamma (Z,A+1)$ is the photodisintegration constant for
+nuclide  $^{A+1}_{\ \ \ Z}$X. 
+In the case that the forward and reverse
+reactions of neutron capture and photodisintegration reach equilibrium
+the abundance ratios for two adjacent isotopes can be expressed by the
+Saha equation
+\begin{multline}
+\label{eq:saha}
+\frac{N(Z,A+1)}{N(Z,A)} =N_n\left(\frac{h^2}{2\pi
+(Am_{n})kT}\right)^{3/2} \times \\
+\frac{2j_{Z,A+1}+1}{(2j_{Z,A}+1)(2j_{n}+1)}
+\frac{G^{\textrm{norm}}_{Z,A+1}}{G^{\textrm{norm}}_{Z,A}}e^{Q_{n\gamma}/kT}
+\end{multline}
+where $j_{Z,A} (j_n)$ is the angular momentum quantum number for
+$^{A}_{Z}$X ($n$, a single neutron), $G^{\textrm{norm}}_{Z,A}$ is a normalized parition
+function (in what follows both $j_{Z,A}$ and
+$G^{\textrm{norm}}_{Z,A}$ are largely ignored and so no more specific
+definitions are given), and $Q_{n\gamma}$ is the Q-value for the forward 
+neutron capture
+reaction on $^{A}_{Z}$X (equivalently the neutron separation energy of
+$^{A+1}_{\ \ \ Z}$X). Equation~\ref{eq:saha} can be used 
+for a specific $T$ and $N_n$ to find what value of 
+$Q_{n\gamma}$  gives $N(Z,A+1) \approx N(Z,A)$.
+For example, \cite{iliadis2008} calculates that with $T=1.25$ GK and 
+$N_n=10^{22}$ cm$^{-3}$ and neglecting spin and partition function terms
+$N(Z,A+1) \approx N(Z,A)$ for $Q_{n\gamma}\approx$ 3 MeV.  Generally,
+$Q_{n\gamma}$ is larger closer to the valley of the stability and
+smaller closer to the neutron drip line (\citealt{iliadis2008}) and
+so, for a given isotopic chain, if $Q_{n\gamma}$ is 3 MeV somewhere
+between the valley of stability and the neutron drip line then closer
+to the valley of stability $Q_{n\gamma}> 3$  MeV and $N(Z,A+1) >
+N(Z,A)$; similarly, closer to the neutron drip line $Q_{n\gamma}< 3$
+MeV and $N(Z,A+1) < N(Z,A)$.  Thus in this simple picture (no spin or
+partition function considerations and the assumption  that neutron capture and
+photodisintegration proceed faster than \bminus\ decays)
+the r-process  tries to pull abundances in a
+given isotopic chain toward a specific $^A_Z$X which has a
+$Q_{n\gamma}$ value close to that which permits $N(Z,A+1) \approx N(Z,A)$. 
 
- neutron capture proceeds
-faster than any \bminus\ decays, producing neutron-rich species that
-run up against the neutron drip line; \bminus\ decays can occur at a
-rate comparable to the neutron capture rate and nuclei can move up in
-$Z$ and $A$ on a neutron-rich path that roughly parallels the valley 
-of stability; nuclei capture neutrons until their neutron number 
-runs up against a nuclear magic number; the low neutron capture
-cross-section can effectively shut down further neutron enrichment of
-the nuclei; or a nucleus with a magic number of neutrons captures a
-neutron and moves to another region of the CON where any of the above
-scenarios can happen again.
+%An important extension to this model to make it more physically
+%palatable is that, for isotopes adjacent in $A$, isotopes with even
+%numbers of neutrons have smaller $Q_{n\gamma}$ values than those with
+%odd numbers of neutrons.  
 
-After the neutron source is turned off the neutron-rich nuclei are
-able to \bminus\ decay to the valley of stability.  Evidence that
+\bminus\ decays move nuclides from one isotopic chain to the next
+higher one in $Z$.  Looking at elements as a whole \cite{iliadis2008}
+has a simple model showing the movement of nuclides from one element
+to the next.  Defining $N_Z$ to be the abundance of a given {\it
+element}, not nuclide
+\begin{equation}
+\frac{dN_Z}{dt} = - \lambda_ZN_Z + \lambda_{Z-1}N_{Z-1}
+\end{equation}
+
+ Evidence that
 something like the r-process is at work in the universe can be seen by
 the abundance peaks in {\bf Figure r-process peak offset}.  As
 mentioned in Section~\ref{sec:s} 
@@ -101,18 +157,7 @@ thus would be unable to access any isobars of ?? with higher $Z$.  ??
 is shielded from the r-process by ?? and thus cannot be formed by the
 s-process.
 
-That was a qualitative description of the r-process.  A quantitative
-model for the r-process (termed the {\it classical} model
-in \citealt{iliadis2008}) is given by
-\begin{multline}
-\frac{N(Z,A+1)}{N(Z,A)} = - N_nN(Z,A) \langle \sigma v \rangle_{Z,A} \\
-+N(Z,A+1)\times\lambda_\gamma (Z,A+1)
-\end{multline}
-where $N(Z,A)$ is the number density of  nuclide $^A_Z$X, $\rangle 
-\sigma v \langle_{Z,A}$ is the neutron
-capture reaction rate per particle pair for the same nuclide, and
-$\lambda_\gamma (Z,A+1)$ is the photodisintegration constant for
-nuclide  $^{A+1}_{Z}$X.  But this doesn't include beta decays.
+
 
 Waiting time approximation (also called primary r-process: \citealt{meyer1994}).
 
