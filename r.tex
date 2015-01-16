@@ -113,13 +113,68 @@ $Q_{n\gamma}$ value close to that which permits $N(Z,A+1) \approx N(Z,A)$.
 higher one in $Z$.  Looking at elements as a whole \cite{iliadis2008}
 has a simple model showing the movement of nuclides from one element
 to the next.  Defining $N_Z$ to be the abundance of a given {\it
-element}, not nuclide
+element} (not nuclide)
 \begin{equation}
+\label{eq:lambdaz}
 \frac{dN_Z}{dt} = - \lambda_ZN_Z + \lambda_{Z-1}N_{Z-1}
 \end{equation}
+where
+\begin{equation}
+\label{eq:th}
+\lambda_Z = \sum_Ap(Z,A)\lambda_\beta (Z,A)
+\end{equation}
+and $p(Z,A) = N(Z,A)/N_Z$ is the normalized abundance distribution for a given
+isotopic chain for a given $T$ and $N_n$ and $\lambda_\beta (Z,A)$ is
+the \bminus\ decay constant for a given species.
+Equation~\ref{eq:lambdaz} has two terms, the first of which describes
+isotopes of element $Z$ decaying off the isotopic chain and the second
+of which describes isotopes of element $Z-1$ decaying onto the
+isotopic chain $Z$.  Equations~\ref{eq:lambdaz} and {eq:th} taken
+together with boundary conditions $N_Z(t=0)=N_0$ for some $Z=Z_0$  and
+$N_Z(t=0)=0$ for $Z\neq Z_0$.  The solution, as given in
+{\cite{iliadis2008} is
+\begin{equation}
+N_{Z_0}(t) = N_0 e^{-\lambda_{Z_0} t}
+\end{equation}
+\begin{multline}
+\label{eq:pi}
+N_Z(t) = N_0 \sum_{i=Z_0}^Z e^{-\lambda_i
+  t}\frac{\lambda_i}{\lambda_Z} \\
+\times \prod_{\substack{j=Z_0\\ j\neq i}} \frac{\lambda_j}{\lambda_j -
+  \lambda_i}~~~~\textrm{for}~Z\neq Z_0
+\end{multline}
+provided all values of $\lambda_j$ are different.  
+We can see from Equation~\ref{eq:pi} that $N_Z$ and $\lambda_Z$ are
+inversely related; so the higher the decay rate the lower the
+abundance and vice-versa, which makes sense.  More important to note
+is that the equations are self-regulating in that they work towards
+achieving a constant flow from one isotopic chain to the next via
+\bminus\ decays (\citealt{iliadis2008}); if indeed such a constant
+flow is established then we get
+\begin{equation}
+\lambda_ZN_Z \approx ~ \textrm{const}.
+\end{equation}
+Thus there can be pile ups of elements with low $\lambda_Z$.
 
- Evidence that
-something like the r-process is at work in the universe can be seen by
+I can add more about magic numbers if I want.  But talk about with the
+peaks in abundances below
+
+As was mentioned in Section~\ref{sec:s} there are some stable nuclides
+that are inaccessible by the s-process due to ``weak links'' in the
+reaction chains that would otherwise contribute to their formation,
+the weak links being nuclides with fast decay rates that \bminus\
+decay back to the valley of stability; the formation of these nuclides
+is completely attributable to the r-process.  Similarly, there are
+some nuclides that are inaccessible by the r-process and whose
+formation can be completely attributed to the s-process.  {\bf Figure}
+shows such a nuclide.  r-process reation chains would end up at ?? and
+thus would be unable to access any isobars of ?? with higher $Z$.  ??
+is shielded from the r-process by ?? and thus cannot be formed by the
+s-process.
+
+ There are several compelling evidences that something like the
+ r-process as described here occurs in nature.  The existence of
+ nuclides inaccessible by the s-process is one.  Another evidence  can be seen in
 the abundance peaks in {\bf Figure r-process peak offset}.  As
 mentioned in Section~\ref{sec:s} 
 the lower neutron capture cross-section of nuclides with a magic
@@ -144,24 +199,13 @@ s-process termination described by Equations~\ref{eq:firsttermination}
 and~\ref{eq:secondtermination}; their creation requires a process that
 can bridge over nuclides with short decay times.
 
-As was mentioned in Section~\ref{sec:s} there are some stable nuclides
-that are inaccessible by the s-process due to ``weak links'' in the
-reaction chains that would otherwise contribute to their formation,
-the weak links being nuclides with fast decay rates that \bminus\
-decay back to the valley of stability; the formation of these nuclides
-is completely attributable to the r-process.  Similarly, there are
-some nuclides that are inaccessible by the r-process and whose
-formation can be completely attributed to the s-process.  {\bf Figure}
-shows such a nuclide.  r-process reation chains would end up at ?? and
-thus would be unable to access any isobars of ?? with higher $Z$.  ??
-is shielded from the r-process by ?? and thus cannot be formed by the
-s-process.
 
 
 
-Waiting time approximation (also called primary r-process: \citealt{meyer1994}).
 
-Dynamic r-process calculatyion (Nn, T descreatese with time
+%Waiting time approximation (also called primary r-process: \citealt{meyer1994}).
+
+Dynamic r-process calculation (Nn, T descreatese with time)
 
 
 \subsection{Proposed Sites}
