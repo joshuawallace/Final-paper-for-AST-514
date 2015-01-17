@@ -7,12 +7,12 @@ it is difficult to define a specific \bminus\ decay half-life as ``the
 reference'' for specifying an upper-limit to the s-process neutron
 capture rate.  Indeed, even in typical
 s-process trajectories there are radioactive isotopes with
-sufficiently long half-lives to cause branching canonical s-process
+sufficiently long half-lives to cause branching in the canonical s-process
 trajectory (which will be defined later) but, in practice, such
 branching is just a small variation on an overall theme.  
 
-A general trajectory of the s-process is shown as the white path in Figure~\ref{fig:con2}.  A
-canonical trajectory of the s-process begins with a specific seed
+A general trajectory of the s-process (with branching) is shown as the white path in Figure~\ref{fig:con2}.  A
+canonical trajectory of the s-process, which I define here, begins with a specific seed
 nucleus (in physical scenarios and calculation $^{56}$Fe is often the
 seed nucleus) which undergoes neutron capture (given by
 Equation~\ref{eq:nc}) until an unstable isotope is reached, at which
@@ -29,11 +29,15 @@ s-process trajectory.  Also, because of differences between
 environments where the s-process may occur the number of branches and
 strength of each branch may also vary from environment to
 environment.  Due to the narrowness of the valley of stability
-branches typically converge after a few reactions.
+branches typically converge after a few reactions.  A typical timescale
+for which the s-process is active is $\sim 10^4$ years
+(\citealt{ryan2010}), which means that centuries can pass
+between neutron capture events (if, say, $\sim100$ neutrons are
+captured for each seed nucleus).
 
 Since the decay rate of radioactive isotopes is higher than the
-neutron capture rate s-process trajectories through the chart of the
-nuclides remain very close to the valley of stability.  This also
+neutron capture rate s-process trajectories through the CON
+remain very close to the valley of stability.  This also
 means that there are some stable nuclei which cannot be formed by the
 s-process.  If a nuclide with a given atomic number $Z_1$ and atomic
 mass $A_1$ has an isotope with atomic number $Z_1$ and atomic mass
@@ -42,10 +46,13 @@ isotope with atomic mass $A_X$ if all the intervening isotopes with
 atomic mass $A_Y$, $A_1 < A_Y < A_X$ are stable as well.  If the
 nuclide with atomic mass $A_X$ cannot be reached through neutron
 capture before the unstable isotope(s) with atomic mass $A_Y$ decay
-then the s-process will never produce it.
+then the s-process will never produce it. Examples in
+Figure~\ref{fig:con2} are $^{86}_{36}$Kr,  $^{87}_{37}$Rb,
+$^{96}_{40}$Zr, and 
+$^{100}_{42}$Mo.
 
-The s-process has a termination point, at which no heavier elements
-can be made.  One such termination loop beginning with $^{209}$Bi
+The s-process has a termination point beyond which no heavier elements
+can be made.  One such termination loop beginning with $^{209}_{83}$Bi
 (\citealt{claytonetal1961}):
 \begin{equation*}
 ^{209}_{\ 83}\textrm{Bi} + n  \rightarrow ^{210}_{\ 83}\textrm{Bi} +
@@ -69,11 +76,10 @@ e^- + \overline{\nu}_e
 + \overline{\nu}_e
 \end{equation}
 
-which then loops.  \cite{claytonetal1961} say that the first step in this loop 56\% of
-the time leads to the unstable $^{210}_{\ 83}\textrm{Bi}$ that decays
-to $^{210}_{\ 84}\textrm{Po}$ while 44\% of the time is leads to a
+which then loops.  \cite{claytonetal1961} say that the first step in this loop leads to the unstable $^{210}_{\ 83}\textrm{Bi}$ that decays
+to $^{210}_{\ 84}\textrm{Po}$ 56\% of the time while the first step leads to a
 nearly stable ground state of $^{210}_{\ 83}\textrm{Bi}$ with a
-half-life of $2.6 \times 10^6$ years.  A neutron capture
+half-life of $2.6 \times 10^6$ years 44\% of the time.  A neutron capture
 on $^{210}_{\ 83}\textrm{Bi}$ proceeds as follows:
 \begin{equation*}
 ^{210}_{\ 83}\textrm{Bi} + n  \rightarrow ^{211}_{\ 83}\textrm{Bi} +
@@ -98,18 +104,36 @@ which also loops.
 
 Because nuclei with magic numbers of neutrons have a lower neutron
 capture cross-section there is a pile up of these nuclei relative to
-their neighbors on the CON.  The s-process peaks can be seen in Figure~\ref{fig:peaks}. Because the s-process follows the valley of
+their neighbors on the CON.  The s-process peaks can be seen in
+Figure~\ref{fig:peaks}. These peaks occur at $A\approx 90, 138, $ and $208$,
+corresponding to neutron magic numbers $N=50, 82, $ and 126, respectively.
+Because the s-process follows the valley of
 stability so closely there are only a few nuclei created by the
 s-process with a magic number of neutrons, which leads to the narrow
-peaks seen in Figure~ref{fig:peaks}.  This is to be contrasted with the
+peaks seen in Figure~\ref{fig:peaks}.  This is to be contrasted with the
 relatively broader peaks of the r-process as will be described in
 Section~\ref{sec:r}. 
+
+\begin{figure*}
+\centering
+\includegraphics[width=6in]{pdf/peaks.png}
+\caption{\label{fig:peaks} Measured abundances of stable nuclides
+ along with their likely source.  Many different sources are shown but
+ most relevant to our discussion are those nuclides above the iron
+ peak
+ ($A\gtrsim75$),
+ where the s- and r-process (and p-process to a lesser degree) are the
+ synthesis sources.  Green diamonds are those nuclides which are
+ primarily produced by the r-process, red circles those primarily
+ produced by the s-process, and purple crosses those produced by a
+ mixture of the two processes.  From~\cite{ryan2010}.}
+\end{figure*}
 
 For the canonical s-process, which assumes that the decay time of
 unstable nuclides is much smaller than the timescale for neutron
 capture in all radioactive nuclei, there is only one stable nucleus
 for a given $A$ accessible by the s-process and thus the s-process
-path is uniquely defined by $A$.  Under these assumptions the abudance
+path is uniquely defined by $A$.  Under these assumptions the abundance
 evolution of a stable nuclide is given by (\citealt{iliadis2008})
 \begin{multline}
 \label{eq:sreactionrate}
@@ -131,15 +155,9 @@ will constantly evolve in time toward heavier nuclei with the eventual
 result being all s-processed nuclei becoming the terminating isotopes
 of Bi and Pb.  
 
-A more general trajectory which allows for the possibility of
-branching is given by
-\begin{multline}
-\frac{dN_s(Z,A)}{dt}
-\end{multline}
-.
 
-I assume that the temperature $T$ is constant over the time the
-s-process is active.  Assuming a Maxwell-Boltzmann distribution 
+Assuming that the temperature $T$ is constant over the time the
+s-process is active and a Maxwell-Boltzmann distribution 
 for the neutron velocities, 
 $\langle \sigma v \rangle_A$ can be written as
 $ \overline{\sigma}_A v_T$, where $ \overline{\sigma}_A$ is the
@@ -152,7 +170,7 @@ here.  It is also useful to define the neutron exposure $\tau$ as
 \begin{equation}
 \tau = v_T \int N_n(t)dt
 \end{equation}
-which will more useful expressed in differential form
+which will be more useful expressed in differential form
 \begin{equation}
 \label{eq:dtau}
 d\tau = v_TN_n(t)dt.
@@ -175,7 +193,7 @@ abundance will increase or decrease,
 \frac{dN_s(A,\tau)}{d\tau} > 0 ~~~\textrm{if}~~~ N_s(A,\tau)
 < \frac{\overline{\sigma}_{A-1}}{\overline{\sigma}_{A}}N_s(A-1,\tau).
 \end{equation}
-Thus, the abundance of a nuclide $A$ in the canoncial s-process with
+Thus, the abundance of a nuclide $A$ in the canonical s-process with
 constant $T$ depends only on its neutron capture cross-section, the
 neutron capture cross-section and abundance of the species before it 
 in the process, and the neutron exposure $\tau$, a measure of neutron
@@ -197,31 +215,31 @@ neutron exposures is needed to explain the observed abundances. They
 also speculated that a variety of seed nuclei could also be
 responsible for the observed abundances, but \cite{clayton1974} showed
 that the s-process chain past the last seed nuclei is independent of
-the initial distribution of the seed nuclei.  \cite{seegeretal1965}
-demonstrated that an exponential distribution of neutron exposures
-expressed as
+the initial distribution of the seed nuclei.  If  neutron exposures are
+expressed as an exponential distribution
 \begin{equation}
 \label{eq:exp}
 \rho(\tau)=\frac{f\times N(56)}{\tau_0}e^{-\tau/\tau_0}
 \end{equation}
-where $f$ is the fraction of $^{56}Fe$ seed nuclei that have been
+where $f$ is the fraction of $^{56}$Fe seed nuclei that have been
 exposed to this exponential neutron exposure, $\rho(\tau)d\tau$ is the
 fraction of the seed nuclei that
 received a neutron exposure between $\tau$ and $\tau + d\tau$, and 
-$\tau_0$ is the mean neutron exposure.  Analyses have shown that
-observed solar system abundances are well fitted by using two
-exponential distributions for the neutron exposure: the ``main
-s-process component'' which describes the abundance distribution from
-$A=90$ to $A=205$ and the ``weak s-process component'' which describes
-the abundance distribution for $A<90$ (\citealt{iliadis2008}).  {\bf
-Good spot for the Figure showing this, iliad's 5.64}.
-Well-fitting 
-parameters for Equation~\ref{eq:exp} for each component
-are (for the main s-process component) $f\approx 0.06$\% (where
-$^{56}$Fe abundance is assume to match the solar system abundance) and
-$\tau_0\approx 0.3$ mb$^{-1}$ (for cross-sections at $kT=30$ keV);
-(for the weak s-process component) $f\approx 1.6$\% and $\tau_0\approx
-0.07$ mb$^{-1}$ (\citealt{kappeleretal1990}.  Additionally, a third component (the ``strong
+$\tau_0$ is the mean neutron exposure, then it is found that two
+different sets of $\tau_0$ and $f$ can fit the observed solar system
+abundances, with the possibility of a third set to explain Pb
+abundances (\citealt{iliadis2008}).  These sets of $\tau_0$ and $f$
+  are called components of the s-process.  The ``main
+s-process component'' (which describes the abundance distribution from
+$A=90$ to $A=205$) was shown by \cite{kappeleretal1990} to have $f\approx 0.06\%$ and $\tau_0\approx$ 0.3 mb
+$^{-1}$ (mb is millibarn).  The thick
+line in Figure~\ref{fig:lastone} shows how well the main s-process
+component, by itself, can fit the solar system abundances for
+$A\gtrsim90$.  The ``weak s-process component'' (which describes
+the abundance distribution for $A<90$)   was shown by
+\cite{kappeleretal1990} to have $f\approx1.6\%$ and $\tau_0\approx 0.07$
+mb$^{-1}$.  
+ Additionally, a third component (the ``strong
 s-process component'') with large neutron exposure has been proposed
 to explain the observed
 abundances of $^{208}$Pb (\citealt{clayton1967}).  Best-fit values
@@ -229,11 +247,23 @@ from \cite{kappeleretal1990} give $f\approx 10^{-4}$\% and $\tau_0\approx
 7$ mb$^{-1}$.  A modified main component, with a distribution that is
 larger than exponential for large $\tau$ could also be used to fit the
 $^{208}$Pb abundance.
+\begin{figure}
+\includegraphics[width=\linewidth]{pdf/lastone.png}
+\caption{\label{fig:lastone} The product of the solar system s-process
+  abundances and the Maxwellian-averaged neutron capture cross-section
+  (at $kT=30$ keV) as a function of $A$ (in units of millibarn per
+  $10^6$ Si atoms) is shown as the open squares, the fit from using
+  only a main s-process component neutron exposure distribution is
+  shown as the dark line while the thin line shows contributions from
+  both a main s-process component and weak s-process component neutron
+  exposure distribution.  The branching seen in the lines is due to
+  branching in the s-process.  From~\cite{kappeleretal2011}.}
+\end{figure}
 
 \cite{iliadis2008} calculates the average number of neutrons captured
 per nucleus for each of the three components mentioned above using his
-Equation 5.183.  The calculated averages are: 3 for the weak, 10 for
-the main, and 140 for the strong s-process components.  The disparity
+Equation 5.183.  The calculated averages are: $\sim$3 for the weak, $\sim$10 for
+the main, and $\sim$140 for the strong s-process components.  The disparity
 between these three components suggest that they occur in different
 astrophysical situations and provide valuable clues to figuring out
 the sites of the s-process.  Of particular note is the value for the
@@ -251,12 +281,11 @@ and~\ref{eq:secondtermination}, $^{208}$Pb can pile up.
 
 \subsection{Proposed Sites}
 
-Due to 2-3 apparently separate contributions to s-process abundances
+Due to the two or three  apparently separate contributions to s-process abundances
 as well as uncertainties in various details of stellar evolution and
-nuclear physics and significant branching in the s-process 
+nuclear physics and significant branching in the s-process, 
 the topic of s-process sites is not yet completely
-settled but there are some robust contenders.  Proposed
-sites include post-main sequence stars.  
+settled but there are some robust contenders.
 
 The main s-process component is thought to happen in low mass
 (1.5-3 \Msol) asymptotic giant branch (AGB) stars
@@ -267,9 +296,9 @@ The physical scenario is thought to proceed as follows.  AGB stars
 have an inert C-O core with bouts of H and He shell burning.  The
 following description follows that of \cite{kappeleretal2011}.  H
 burning in the envelop produces He, which compresses the He shell
-until the He at the bottom shell ignites in what is called a thermal
-pulse (TP).  During the TP He burns to $^{12}$C as well as convection
-is trigger in the He shell.  This influx of energy expands the star,
+until the He at the bottom of the shell ignites in what is called a thermal
+pulse (TP).  During the TP two things happen: He burns to $^{12}$C and convection
+is triggered in the He shell.  This influx of energy expands the star,
 which turns off H burning in the envelope.  Eventually He shell
 burning turns off and H shell burning in the envelope is reinstated,
 creating more He and starting the process again.  This TP phenomenon 
@@ -287,8 +316,7 @@ $^{13}$C$+ \alpha \rightarrow ^{16}$O$+n$ reaction neutrons are
 liberated which can then participate in the main component of the
 s-process.  This neutron exposure lasts for about 10$^4$ years and
 produces a neutron density of 10$^6$ to 10$^8$ cm$^{-3}$
-(\citealt{kappeleretal2011}).  {\bf Figure would be good here, Fig.2
-kippelahumlat whatever 1990}.  Elemental abundances in AGB stars consistent with
+(\citealt{kappeleretal2011}).   Elemental abundances in AGB stars consistent with
 s-processing similar to what is described here have been observed (\citealt{smithlambert1990}).
 
 The TP continues outward in the star until it almost reaches the
@@ -307,8 +335,7 @@ the solar system relative abundances for s-process-only nuclei,
 lending credibility that s-processing that happens in low mass AGB
 stars can produce the main s-process component abundances that we see
 in the solar system.  The underproduction of those s-process nuclei
-with $A\lesssim90$ also suggests the need for another s-process
-component (specifically the weak component).
+with $A\lesssim90$ also suggests the need for the weak component.
 \begin{figure}
 \includegraphics[width=\linewidth]{pdf/sproc.png}
 \caption{\label{fig:sproc} Abundance distribution calculated in a
@@ -332,7 +359,7 @@ have been observed (\citealt{vaneck2001}; \citealt{vanecketal2003}).
 The weak s-process component is thought to occur in core He burning in
 massive stars
 (e.g., \citealt{peters1968}; \citealt{couch1974}; \citealt{raiteri1991}).
-\cite{iliadis2008} says more specifically it occurs in stars with mass
+More specifically, \cite{iliadis2008} says it occurs in stars with mass
 $\geq13$\Msol.  $^{14}$N left from the CNO cycle during H burning
 (which piles up because proton capture on $^{14}$N is the rate
 limiting step of the CNO cycle) fuses with two He nuclei to form
@@ -345,7 +372,8 @@ major contributors to the weak s-process component.
 The scenarios described above (shell He and H burning in AGB stars and
 core He burning in massive stars) are generally acknowledged to be the
 most likely sites for the s-process; however, there are many other
-sites which have been proposed and may contribute in some fraction to
+sites which have been proposed and may contribute  some fraction to
+the 
 overall s-process nuclide abundance.  The resolution of current
 uncertainties in nuclear physics and stellar evolution, as well as new
 discoveries made with the increasing fidelity of stellar evolution
@@ -360,10 +388,10 @@ burning. There have been differing thoughts and results on the
 significance of this site over the year, with a general trend in
 recent years showing this site to be more significant than was
 originally thought.  For example, \cite{arcoragi1991} concluded from their
-simulation that core C burning was not more efficient than core
+simulation that core carbon burning was not more efficient than core
 He burning at producing weak s-process nuclides and that He burning
 causes the observed Galactic weak s-process abundances.  More recent
-work has focused on the uncertainties of the core C burning rate and
+work has focused on the uncertainties of the core carbon burning rate and
 their effects on stellar nucleosynthesis.  Specifically, \cite{bennettetal2012}
 show that three different carbon burning models applied over a range
 of stellar masses produce different
@@ -374,7 +402,7 @@ increases the efficiency of the $^{13}$C
 neutron source as well as increase the lifetime of the carbon burning
 stage, which both produce a higher neutron exposure.  They also show that very
 high mass stars (M$\gtrsim25$\Msol) with a particular carbon-burning
-model produce convective cores, which allows mixing of neutrons into
+model produce convective cores, which allow mixing of neutrons into
 the center of the star and enhances neutron exposure.  This also
 addresses another concern of s-process in core carbon burning, which
 is that nuclei produced in carbon cores without convection are unable
@@ -382,24 +410,23 @@ to leave the core and thus are unable to leave the star as its
 envelope is blown off via winds or supernovae and thus cannot
 contribute to observed nuclide abundances.  However, based on the
 s-process production of their most strongly enhanced carbon burning
-rate they are able to rule that burning rate out because of an
+rate \cite{bennettetal2012} are able to rule that burning rate out because of an
 over-production and over-mixing of those nuclides.  A moderately enhanced carbon
 burning rate for masses $\gtrsim 20$\Msol\ is also similarly ruled
 out.  Thus, limits on core carbon burning rates can be made based on
 observed s-process abundances but the problem is still not completely
 solved and core carbon burning may be a significant contributor to
-observed s-process abundances.  \cite{bennettetal2012} also note in 
-their paper the
+observed s-process abundances.  \cite{bennettetal2012} also note the
 existence of overlapping convective regions between the carbon core
 and the carbon shell, which may also be a nucleosynthesis site worthy
-of furture investigation. The models that produce overlapping
+of further investigation. The models that produce overlapping
 convective zones are the models that were ruled out by comparing
 predicted s-process yields with observed solar system abundances; this
 seems to indicate that that the models with overlapping convective
 zones do not exist in nature and thus are not worth further
 consideration.
 
-%As noted above, convection can have a signficant role in observed 
+%As noted above, convection can have a significant role in observed 
 %s-process abundances by pulling
 %s-processed materials out of the depths of a star to regions where
 %they can eventually become part of the interstellar medium (ISM)
@@ -410,12 +437,14 @@ consideration.
 %overshoot.  This is when
 %material that is being convected 
 
-Another controversy involved proton mixing with the main s-process
-component that occurs in low mass AGB stars, as described previously.
-Key to that process is the mixing of the intially separate $^{12}$C
+Another controversy is how protons can mix with the $^{12}$C  to
+produce the main s-process component thought to originate 
+in low mass AGB stars, as described previously.
+Key to that process is the mixing of the initially separate $^{12}$C
 and protons to allow the creation of $^{13}$C.  The $^{13}$C pocket is
 thought to exist in a thin shell below the H envelope, requiring an
-injection of H-rich material from the envelope above. There are
+injection of H-rich material from the envelope above for $^{13}$C to
+be created. There are
 several proposed mechanisms for this proton injection.  One is
 convective overshoot (\citealt{herwigetal1997}) where the momentum of
 matter in convective motion carries it beyond the physical reach of
@@ -423,15 +452,16 @@ the convective zone and partly into the radiative zone, producing
 mixing into the radiative zone. \cite{lugaroetal2003} use computer
 simulations with prescription for convective overshoot to produce
 s-process abundances consistent with many observations. However, they 
-also show that the s-process abundances are more depedent on the
-presence of a $^{13}$C pocket by manually putting $^{13}$C pockets
+also show that the s-process abundances are more dependent on the
+presence of a $^{13}$C pocket than how it got there.  They
+demonstrated this  by manually putting $^{13}$C pockets
 into simulations without convective overshoot and obtaining similar
 results. Another proposed proton injection mechanism is rotationally
 induced mixing.  \cite{langeretal1999} demonstrate that rotational
 mixing in AGB stars can produce a $^{13}$C-rich layer although they
 also point out that there is no evidence to suggest rotational mixing
 over the convective overshoot of \cite{herwigetal1997} nor any reason
-to believe that mechanisms cannot happen
+to believe that these mechanisms cannot happen
 simultaneously.  \cite{herwig2003} find that convective overshooting
 has a greater positive effect on neutron exposure than does rotational
 mixing but reach the conclusion that both effects are important for
@@ -439,17 +469,18 @@ obtaining observed s-process nuclide abundances since their convective
 overshooting produces too large of a neutron exposure and their
 rotational mixing tempers this large neutron
 exposure.  \cite{siess2004} discuss the effect that rotational mixing
-has on the formation of the neutron poison (a nuclide that absorbs
+has on the formation of $^{14}$N, a neutron poison (a neutron poison
+is a nuclide that absorbs
 neutrons without participating in the s-process, thus reducing $N_n$)
-$^{14}$N and how well it mixes with $^{13}$C; because of this, the
+and how well it mixes with $^{13}$C; because of this, the
 effect rotational mixing has on s-process efficiency is highly
 dependent on the strength and duration of the shear mixing phase.  A
-third proposed mixing mechanism is weak tubulence produced by gravity
+third proposed mixing mechanism is weak turbulence produced by gravity
 waves.  \cite{denissenkov2003} show that it is possible that this mechanism may
 produce a $^{13}$C pocket much wider than convective overshooting.
 
 In conclusion, there are two main proposed sites for the s-process:
-atmospheres of low-mass AGB stars and core He burning in massive
+the shells of low-mass AGB stars and core He burning in massive
 stars, corresponding to the main and weak s-process components,
 respectively.  The strong s-process component, if it exists, can be a
 result of the s-process proceeding in an environment with few seed
@@ -457,8 +488,7 @@ nuclei, allowing for a greater number of neutron captures on average
 per seed nucleus.  A theoretical description of what happens at each
 of these sites as well as simulations modeling nucleosynthesis at
 these sites are fairly well developed and support the idea of
-the s-process at these sites.  There is also some observation evidence
-in support of these claims.  However, uncertainties in some nuclear
+the s-process at these sites.  However, uncertainties in some nuclear
 physics aspects of the neutron-creating and neutron poison reaction
 chains as well as details of stellar evolution prevent definite
 conclusions as to whether these sites are the sole significant
@@ -467,18 +497,20 @@ provide significant contributions.  The resolution of these
 uncertainties is closely tied to the progress of stellar evolution
 models and simulations and so progress in this area will lead to
 better understanding of s-process sites, as well as progress in
-relevant areas of nuclear physics.  It is the author's opinion that
-evidence in support of the main two proposed s-process sites is
-sufficient to expect them as the main contributors to s-process
-abundances but that other sites will be shown to also provide
-significant contributions.
-
+relevant areas of nuclear physics.  
 
 %Other stars in PUMO paper
 
 %Neutron poison
 
-Triple alpha.
-
-LEPP?
 %Third dredge up shutting off neutron capture?
+
+%  LocalWords:  bminus bminus nc claytonetal1961 firsttermination exp
+%  LocalWords:  secondtermination gtrsim75 iliadis2008 sreactionrate
+%  LocalWords:  dtau intermsoftau kappeleretal1990 lastone Msol sproc
+%  LocalWords:  kappeleretal2011 schwarzschild1967 bussoetal1999
+%  LocalWords:  arlandinietal1999 smithlambert1990 lesssim90
+%  LocalWords:  gallinoetal1998 travaglioetal2001 vaneck2001
+%  LocalWords:  vanecketal2003 raiteri1991 arcoragi1991 siess2004
+%  LocalWords:  bennettetal2012 herwigetal1997 lugaroetal2003
+%  LocalWords:  langeretal1999 denissenkov2003
