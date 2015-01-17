@@ -1,0 +1,44 @@
+;; RefTeX parse info file
+;; File: /Users/joshuajw/class/finalpaper/s.tex
+;; User: joshuajw (Joshua Wallace)
+
+(set reftex-docstruct-symbol '(
+
+
+(xr nil "\\\\\\\\\\\\")
+
+(index-tags)
+
+(is-multi nil)
+
+(bibview-cache)
+
+(master-dir . "/Users/joshuajw/class/finalpaper/")
+
+(label-numbers)
+
+(bof "/Users/joshuajw/class/finalpaper/s.tex")
+
+("sec:s" "s" "\\subsection{Description} The s-process occurs when the rate for neutron capture is much lower than t" "/Users/joshuajw/class/finalpaper/s.tex" nil)
+
+(toc "toc" "      1 Description" "/Users/joshuajw/class/finalpaper/s.tex" nil 3 "1" "\\subsection{Description}" 15)
+
+("eq:firsttermination" "e" "^{209}_{\\ 82}\\textrm{Pb} \\rightarrow ^{209}_{\\ 83}\\textrm{Bi} + e^- + \\overline{\\nu}_e " "/Users/joshuajw/class/finalpaper/s.tex" nil)
+
+("eq:secondtermination" "e" "^{209}_{\\ 82}\\textrm{Pb} \\rightarrow ^{209}_{\\ 83}\\textrm{Bi} + e^- + \\overline{\\nu}_e " "/Users/joshuajw/class/finalpaper/s.tex" nil)
+
+("eq:sreactionrate" "e" "\\frac{dN_s(A,t)}{dt} = - N_n(t)N_s(A,t)\\langle \\sigma v \\rangle_A " "/Users/joshuajw/class/finalpaper/s.tex" nil)
+
+("eq:dtau" "e" "d\\tau = v_TN_n(t)dt. " "/Users/joshuajw/class/finalpaper/s.tex" nil)
+
+("eq:intermsoftau" "e" "\\frac{dN_s(A,\\tau)}{d\\tau} = -N_s(A,\\tau)\\overline{\\sigma}_A + N_s(A-1,\\tau)\\overline{\\sigma}_{A-1}." "/Users/joshuajw/class/finalpaper/s.tex" nil)
+
+("eq:exp" "e" "\\rho(\\tau)=\\frac{f\\times N(56)}{\\tau_0}e^{-\\tau/\\tau_0} " "/Users/joshuajw/class/finalpaper/s.tex" nil)
+
+(toc "toc" "      2 Proposed Sites" "/Users/joshuajw/class/finalpaper/s.tex" nil 3 "2" "\\subsection{Proposed Sites}" 12269)
+
+("" "f" "From~\\cite{}." "/Users/joshuajw/class/finalpaper/s.tex" nil)
+
+(eof "/Users/joshuajw/class/finalpaper/s.tex")
+))
+
